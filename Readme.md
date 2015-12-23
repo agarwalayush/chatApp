@@ -1,1 +1,1 @@
-extension of chat app tutorial on socket.io
+extension of chat app [tutorial](http://socket.io/get-started/chat/).
