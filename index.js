@@ -10,7 +10,7 @@ io.on('connection', function(socket){
     var sender = "unKnown";
 
     socket.on('disconnect', function(){
-            console.log(sender + ' disconnected');
+        console.log(sender + ' disconnected');
     });
     
     socket.on('nickname', function(name){
@@ -25,10 +25,10 @@ io.on('connection', function(socket){
     });
 
     socket.on('chat message', function(msg){
-            socket.broadcast.emit('chat message', sender + " : " + msg)
-            console.log('message by ' + sender + ' : ' + msg);
-        });
-    });
+        socket.broadcast.emit('chat message', sender + " : " + msg)
+        console.log('message by ' + sender + ' : ' + msg);
+    );
+});
 
 http.listen(3000, function(){
       console.log('listening on *:3000');
